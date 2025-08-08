@@ -4,5 +4,25 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
+[features]
+cuda  = ["dep:cudarc", "dep:cuda-driver-sys"]
+metal = ["dep:metal-rs", "dep:objc"]
+cpu   = ["dep:rayon"]
+
+[dependencies]
+tensor-mesh-core = { path = "../tensor-mesh-core" }
+thiserror = "2.0.12"
+
+# CUDA
+cudarc          = { version = "0.11", optional = true }
+cuda-driver-sys = { version = "0.3", optional = true }
+
+# Metal
+metal-rs = { version = "0.10", optional = true }
+objc     = { version = "0.2", optional = true }
+
+# CPU
+rayon = { version = "1.8", optional = true }
+
 [lib]
 path = "src/lib.rs"
