@@ -70,3 +70,6 @@ perf.data*
 
 # Cache
 .cache/
+
+# Images
+crates/**/*.png
