@@ -1,0 +1,72 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo
+Cargo.lock
+.cargo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Debug info
+*.dSYM/
+
+# Testing
+*.gcda
+*.gcno
+*.profraw
+
+# Documentation
+/docs/build/
+/docs/_build/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.#*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Coverage
+tarpaulin-report.html
+coverage/
+*.profdata
+
+# Benchmarks
+criterion/
+flamegraph.svg
+perf.data*
+
+# Cache
+.cache/
