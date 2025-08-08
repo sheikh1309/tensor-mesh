@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/tensor-mesh-core",
+    "crates/tensor-mesh-ipc",
+    "crates/tensor-mesh-kernels",
+    "crates/tensor-mesh-scheduler",
+    "crates/tensor-mesh-model",
+    "crates/tensor-mesh-api",
+    "crates/lctl",
+]
